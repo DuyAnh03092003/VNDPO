@@ -28,9 +28,31 @@ window.VNDS_DATA = (() => {
     }
   ];
   const RIGHTS = [
-    ['withdraw-consent', 'Quyền đồng ý', 'Cung cấp sự đồng ý', 'Cung cấp sự đồng ý cho việc xử lý dữ liệu cá nhân của mình.'],
-    ['self-protection', 'Quyền khác của chủ thể dữ liệu', 'Yêu cầu biện pháp bảo vệ dữ liệu cá nhân của mình.', 'Yêu cầu củ chủ thể dữ liệu trong quá trình xử lý dữ liệu cá nhân.'],
-  ].map(([id, name, description, example], i) => ({ id, name, description, example, icon: ['ℹ️', '✅', '🔎', '↩️', '🗑️', '⏸️', '📦', '🛑', '⚖️', '💰', '🛡️'][i], defaultUrl: `right-request.html?right=${id}` }));
+    {
+      id: 'withdraw-consent',
+      name: 'Quyền rút lại sự đồng ý',
+      description:
+        'Rút lại sự đồng ý đã cung cấp trước đó.',
+      example:
+        'Dừng nhận email giới thiệu sản phẩm.',
+      icon: '↩️',
+
+      defaultUrl:
+        'https://irm-demo.datatrust.one/irm/request/947727/c74e/e4ca05fe-c74e-49f1-82f9-82d20b875d2d'
+    },
+    {
+      id: 'self-protection',
+      name: 'Quyền khác của chủ thể dữ liệu',
+      description:
+        'Yêu cầu thực hiện các biện pháp liên quan đến việc bảo vệ dữ liệu cá nhân.',
+      example:
+        'Gửi yêu cầu khác phát sinh trong quá trình xử lý dữ liệu cá nhân.',
+      icon: '🛡️',
+
+      defaultUrl:
+        'https://irm-demo.datatrust.one/irm/request/947727/081c/e28a1cd6-081c-4e0c-b856-ef81ddb13d62'
+    }
+  ];
   const PROVINCES = ['Hà Nội', 'TP. Hồ Chí Minh', 'Đà Nẵng', 'Hải Phòng', 'Cần Thơ', 'Hà Nam', 'Bắc Ninh', 'Quảng Ninh', 'Thanh Hóa', 'Khác'];
   const TERMS_SECTIONS = [
     ['Phạm vi áp dụng', 'Điều khoản này áp dụng cho website mô phỏng do VNDS xây dựng nhằm phục vụ đào tạo.'],
