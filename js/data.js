@@ -363,7 +363,7 @@ window.VNDS_DATA = (() => {
   ];
   const RIGHTS = [
     ['withdraw-consent', 'Quyền rút lại sự đồng ý', 'Rút lại sự đồng ý đã cung cấp trước đó.', 'Dừng nhận email giới thiệu sản phẩm.'],
-    ['self-protection', 'Quyền khác củ chủ thể dữ liệu', 'Yêu cầu biện pháp bảo vệ dữ liệu cá nhân của mình.', 'Yêu cầu củ chủ thể dữ liệu trong quá trình xử lý dữ liệu cá nhân.'],
+    ['self-protection', 'Quyền khác của chủ thể dữ liệu', 'Yêu cầu biện pháp bảo vệ dữ liệu cá nhân của mình.', 'Yêu cầu củ chủ thể dữ liệu trong quá trình xử lý dữ liệu cá nhân.'],
   ].map(([id, name, description, example], i) => ({ id, name, description, example, icon: ['ℹ️', '✅', '🔎', '↩️', '🗑️', '⏸️', '📦', '🛑', '⚖️', '💰', '🛡️'][i], defaultUrl: `right-request.html?right=${id}` }));
   const PROVINCES = ['Hà Nội', 'TP. Hồ Chí Minh', 'Đà Nẵng', 'Hải Phòng', 'Cần Thơ', 'Hà Nam', 'Bắc Ninh', 'Quảng Ninh', 'Thanh Hóa', 'Khác'];
   const TERMS_SECTIONS = [
