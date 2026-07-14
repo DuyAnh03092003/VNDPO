@@ -5,12 +5,46 @@ window.VNDS_DATA = (() => {
     demoNotice: 'Website mô phỏng do VNDS xây dựng phục vụ đào tạo – Không phải website cung cấp dịch vụ thực tế.'
   };
   const PRODUCTS = [
-    {id:'cloud',name:'VNDS Cloud Demo',category:'Lưu trữ dữ liệu',icon:'☁️',description:'Dịch vụ mô phỏng lưu trữ dữ liệu trực tuyến, dùng để trình diễn hoạt động thu thập thông tin và ghi nhận sự đồng ý.',collectedData:['Họ tên','Email','Số điện thoại','Nhu cầu sử dụng'],purposes:['Tiếp nhận đăng ký','Cung cấp dịch vụ','Hỗ trợ khách hàng']},
-    {id:'pay',name:'VNDS Pay Demo',category:'Thanh toán điện tử',icon:'💳',description:'Giải pháp mô phỏng thanh toán điện tử và minh họa việc thông báo mục đích xử lý dữ liệu.',collectedData:['Họ tên','Số điện thoại','Email','Thông tin giao dịch'],purposes:['Xử lý giao dịch','Xác minh','Hỗ trợ']},
-    {id:'shop',name:'VNDS Shop Demo',category:'Thương mại điện tử',icon:'🛒',description:'Nền tảng mua sắm mô phỏng dùng để đào tạo về sự đồng ý và chính sách bảo vệ dữ liệu.',collectedData:['Họ tên','Địa chỉ','Điện thoại','Nhu cầu mua sắm'],purposes:['Xử lý đơn hàng','Giao hàng','Chăm sóc khách hàng']},
-    {id:'health',name:'VNDS Health Demo',category:'Chăm sóc sức khỏe',icon:'🩺',description:'Dịch vụ mô phỏng giúp minh họa việc xử lý dữ liệu có mức độ nhạy cảm cao hơn.',collectedData:['Họ tên','Ngày sinh','Thông tin liên hệ','Nhu cầu chăm sóc'],purposes:['Tiếp nhận nhu cầu','Liên hệ','Hỗ trợ dịch vụ']},
-    {id:'travel',name:'VNDS Travel Demo',category:'Đặt vé và hành trình',icon:'✈️',description:'Dịch vụ mô phỏng đặt vé và quản lý hành trình, phục vụ trình diễn luồng đồng ý.',collectedData:['Họ tên','Email','Số điện thoại','Hành trình'],purposes:['Đặt dịch vụ','Thông báo hành trình','Hỗ trợ']},
-    {id:'loyalty',name:'VNDS Loyalty Demo',category:'Khách hàng thân thiết',icon:'🎁',description:'Chương trình thành viên mô phỏng, giúp minh họa việc tách riêng đồng ý marketing.',collectedData:['Họ tên','Email','Điện thoại','Lịch sử tích điểm'],purposes:['Quản lý thành viên','Tích điểm','Truyền thông khi có đồng ý']}
+    {
+      id:'safetyshield',
+      name:'SafetyShield',
+      category:'An toàn dữ liệu',
+      icon:'🛡️',
+      description:'Sản phẩm mô phỏng sử dụng serviceId cố định và URL API được nhập trong Cài đặt Demo.',
+      collectedData:['Họ và tên','Số điện thoại','Email','CCCD/Giấy tờ định danh'],
+      purposes:['Đăng ký sử dụng sản phẩm'],
+      serviceId:'75998306713942116'
+    },
+    {
+      id:'pay',name:'VNDS Pay Demo',category:'Thanh toán điện tử',icon:'💳',
+      description:'Sản phẩm mô phỏng. serviceId được khai báo trong js/data.js và URL API được nhập trong Cài đặt Demo.',
+      collectedData:['Họ và tên','Số điện thoại','Email','CCCD/Giấy tờ định danh'],
+      purposes:['Đăng ký sử dụng sản phẩm'],serviceId:''
+    },
+    {
+      id:'shop',name:'VNDS Shop Demo',category:'Thương mại điện tử',icon:'🛒',
+      description:'Sản phẩm mô phỏng. serviceId được khai báo trong js/data.js và URL API được nhập trong Cài đặt Demo.',
+      collectedData:['Họ và tên','Số điện thoại','Email','CCCD/Giấy tờ định danh'],
+      purposes:['Đăng ký sử dụng sản phẩm'],serviceId:''
+    },
+    {
+      id:'health',name:'VNDS Health Demo',category:'Chăm sóc sức khỏe',icon:'🩺',
+      description:'Sản phẩm mô phỏng. serviceId được khai báo trong js/data.js và URL API được nhập trong Cài đặt Demo.',
+      collectedData:['Họ và tên','Số điện thoại','Email','CCCD/Giấy tờ định danh'],
+      purposes:['Đăng ký sử dụng sản phẩm'],serviceId:''
+    },
+    {
+      id:'travel',name:'VNDS Travel Demo',category:'Đặt vé và hành trình',icon:'✈️',
+      description:'Sản phẩm mô phỏng. serviceId được khai báo trong js/data.js và URL API được nhập trong Cài đặt Demo.',
+      collectedData:['Họ và tên','Số điện thoại','Email','CCCD/Giấy tờ định danh'],
+      purposes:['Đăng ký sử dụng sản phẩm'],serviceId:''
+    },
+    {
+      id:'loyalty',name:'VNDS Loyalty Demo',category:'Khách hàng thân thiết',icon:'🎁',
+      description:'Sản phẩm mô phỏng. serviceId được khai báo trong js/data.js và URL API được nhập trong Cài đặt Demo.',
+      collectedData:['Họ và tên','Số điện thoại','Email','CCCD/Giấy tờ định danh'],
+      purposes:['Đăng ký sử dụng sản phẩm'],serviceId:''
+    }
   ];
   const RIGHTS = [
     ['know','Quyền được biết','Được thông báo về hoạt động xử lý dữ liệu cá nhân.','Biết doanh nghiệp thu thập dữ liệu gì, cho mục đích nào và lưu trong bao lâu.'],
@@ -41,12 +75,12 @@ window.VNDS_DATA = (() => {
   const PRIVACY_SECTIONS=[
     ['Giới thiệu','Chính sách này giải thích cách website mô phỏng thu thập và lưu dữ liệu trong quá trình đào tạo.'],
     ['Bên kiểm soát dữ liệu','Công ty Cổ phần An ninh Dữ liệu Việt Nam – VNDS, trong phạm vi kịch bản mô phỏng.'],
-    ['Loại dữ liệu được xử lý','Họ tên, số điện thoại, email, ngày sinh, địa chỉ, thông tin định danh nếu người dùng tự cung cấp, nhu cầu sử dụng dịch vụ và trạng thái đồng ý.'],
-    ['Mục đích xử lý','Tiếp nhận đăng ký, liên hệ, hỗ trợ, minh họa quy trình cung cấp dịch vụ và ghi nhận sự đồng ý.'],
-    ['Phương thức thu thập','Dữ liệu được người dùng nhập trực tiếp vào biểu mẫu và được lưu cục bộ trên trình duyệt.'],
-    ['Căn cứ xử lý và sự đồng ý','Các mục đích xử lý bắt buộc và không bắt buộc được trình bày riêng; các checkbox không được tích sẵn.'],
+    ['Loại dữ liệu được xử lý','Họ và tên, số điện thoại, email, CCCD hoặc giấy tờ định danh và trạng thái đồng ý.'],
+    ['Mục đích xử lý','Tiếp nhận đăng ký sử dụng sản phẩm và ghi nhận sự đồng ý của khách hàng.'],
+    ['Phương thức thu thập','Dữ liệu được người dùng nhập trực tiếp vào biểu mẫu và được gửi tới API Consent đã cấu hình. Một bản ghi demo có thể được lưu trên trình duyệt.'],
+    ['Căn cứ xử lý và sự đồng ý','Biểu mẫu có một ô đồng ý duy nhất, không được tích sẵn. Chỉ khi người dùng chủ động chọn, payload mới ghi nhận answer bằng 1.'],
     ['Cookie và công nghệ theo dõi','Cookie Banner có thể được tích hợp bằng mã script do người đào tạo cung cấp trong phần Cài đặt Demo.'],
-    ['Chia sẻ dữ liệu','Website không gửi dữ liệu tới backend. Mọi nội dung chia sẻ chỉ là trạng thái đồng ý mô phỏng.'],
+    ['Truyền dữ liệu','Khi API Consent được kích hoạt, website gửi dữ liệu trực tiếp tới endpoint DataTrust bằng multipart/form-data.'],
     ['Thời gian lưu trữ','Dữ liệu được giữ trong localStorage cho đến khi người dùng xóa hoặc khôi phục cấu hình.'],
     ['Biện pháp bảo vệ','Website hạn chế hiển thị đầy đủ số định danh, kiểm tra URL và không sử dụng eval hoặc new Function.'],
     ['Rủi ro có thể phát sinh','Dữ liệu có thể bị người khác nhìn thấy nếu dùng chung trình duyệt hoặc thiết bị. Vì vậy chỉ nên nhập dữ liệu giả lập.'],
