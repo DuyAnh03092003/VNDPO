@@ -38,7 +38,7 @@ window.VNDS_DATA = (() => {
       icon: '↩️',
 
       defaultUrl:
-        'https://irm-demo.datatrust.one/irm/request/947727/c74e/e4ca05fe-c74e-49f1-82f9-82d20b875d2d'
+        ''
     },
     {
       id: 'self-protection',
@@ -50,7 +50,7 @@ window.VNDS_DATA = (() => {
       icon: '🛡️',
 
       defaultUrl:
-        'https://irm-demo.datatrust.one/irm/request/947727/081c/e28a1cd6-081c-4e0c-b856-ef81ddb13d62'
+        ''
     }
   ];
   const PROVINCES = ['Hà Nội', 'TP. Hồ Chí Minh', 'Đà Nẵng', 'Hải Phòng', 'Cần Thơ', 'Hà Nam', 'Bắc Ninh', 'Quảng Ninh', 'Thanh Hóa', 'Khác'];
