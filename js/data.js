@@ -6,13 +6,14 @@ window.VNDS_DATA = (() => {
   };
   const PRODUCTS = [
     {
-      id: 'passenger-transport',
+      id: 'eoffice-service',
       serviceId: '75998369709814782',
-      acronym: 'VCHK',
-      name: 'Vận chuyển hành khách',
+      acronym: 'SGO',
+      name: 'Dịch vụ eOffice',
       category: 'Dịch vụ',
-      description: 'Dịch vụ vận chuyển hành khách bằng đường hàng không.',
-      icon: '✈️',
+      description:
+        'Dịch vụ văn phòng điện tử hỗ trợ quản lý công việc, tài liệu và quy trình vận hành của doanh nghiệp.',
+      icon: '🏢',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -26,13 +27,14 @@ window.VNDS_DATA = (() => {
       ]
     },
     {
-      id: 'cargo-transport',
+      id: 'pentest-gateway',
       serviceId: '75998361235541202',
-      acronym: 'HH',
-      name: 'Vận chuyển hàng hóa',
+      acronym: 'SGF',
+      name: 'Pentest Gateway',
       category: 'Dịch vụ',
-      description: 'Dịch vụ vận tải hàng không cho doanh nghiệp và logistics.',
-      icon: '📦',
+      description:
+        'Dịch vụ kiểm thử an toàn thông tin nhằm phát hiện lỗ hổng và đánh giá mức độ an toàn của hệ thống.',
+      icon: '🧪',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -40,20 +42,20 @@ window.VNDS_DATA = (() => {
         'Số CCCD hoặc giấy tờ định danh'
       ],
       purposes: [
-        'Tiếp nhận đăng ký dịch vụ',
+        'Tiếp nhận yêu cầu kiểm thử',
         'Xác minh thông tin khách hàng',
-        'Cung cấp và hỗ trợ dịch vụ'
+        'Tư vấn và cung cấp dịch vụ'
       ]
     },
     {
-      id: 'baggage-service',
+      id: 'gateway-school',
       serviceId: '75998306713942102',
-      acronym: 'GS',
-      name: 'Dịch vụ hành lý',
+      acronym: 'SGS',
+      name: 'Gateway School',
       category: 'Sản phẩm phần mềm',
       description:
-        'Mua thêm hành lý ký gửi, hành lý ưu tiên và dịch vụ vận chuyển dụng cụ thể thao.',
-      icon: '🧳',
+        'Nền tảng phần mềm phục vụ hoạt động đào tạo, quản lý học viên và cung cấp nội dung học tập trực tuyến.',
+      icon: '🎓',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -61,20 +63,20 @@ window.VNDS_DATA = (() => {
         'Số CCCD hoặc giấy tờ định danh'
       ],
       purposes: [
-        'Tiếp nhận đăng ký dịch vụ',
-        'Xác minh thông tin khách hàng',
-        'Cung cấp và hỗ trợ dịch vụ'
+        'Tiếp nhận đăng ký học tập',
+        'Quản lý thông tin học viên',
+        'Cung cấp và hỗ trợ chương trình đào tạo'
       ]
     },
     {
-      id: 'inflight-meal-service',
+      id: 'compliance-consulting',
       serviceId: '75998306713942103',
-      acronym: 'DCF',
-      name: 'Suất ăn & dịch vụ trên chuyến bay',
-      category: 'Sản phẩm phần mềm',
+      acronym: 'TV',
+      name: 'Tư vấn tuân thủ',
+      category: 'Dịch vụ',
       description:
-        'Combo đồ ăn, nước uống và suất ăn nóng cao cấp cho khách hàng SkyBoss hoặc Business.',
-      icon: '🍱',
+        'Dịch vụ tư vấn giúp doanh nghiệp đánh giá hiện trạng và xây dựng phương án tuân thủ về bảo vệ dữ liệu cá nhân.',
+      icon: '📋',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -82,20 +84,20 @@ window.VNDS_DATA = (() => {
         'Số CCCD hoặc giấy tờ định danh'
       ],
       purposes: [
-        'Tiếp nhận đăng ký dịch vụ',
-        'Xác minh thông tin khách hàng',
-        'Cung cấp và hỗ trợ dịch vụ'
+        'Tiếp nhận nhu cầu tư vấn',
+        'Liên hệ và xác minh thông tin',
+        'Cung cấp phương án tư vấn phù hợp'
       ]
     },
     {
-      id: 'flight-insurance',
+      id: 'datatrust-ce',
       serviceId: '75998306713942104',
-      acronym: 'GC',
-      name: 'Bảo hiểm chuyến bay',
+      acronym: 'CE',
+      name: 'Phần mềm DataTrust CE',
       category: 'Sản phẩm phần mềm',
       description:
-        'Dịch vụ bảo hiểm bổ sung được cung cấp khi khách hàng đặt vé trực tuyến.',
-      icon: '🛡️',
+        'Phần mềm hỗ trợ doanh nghiệp quản lý hoạt động tuân thủ và bảo vệ dữ liệu cá nhân.',
+      icon: '🔐',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -103,9 +105,9 @@ window.VNDS_DATA = (() => {
         'Số CCCD hoặc giấy tờ định danh'
       ],
       purposes: [
-        'Tiếp nhận đăng ký dịch vụ',
+        'Tiếp nhận đăng ký sản phẩm',
         'Xác minh thông tin khách hàng',
-        'Cung cấp và hỗ trợ dịch vụ'
+        'Cung cấp và hỗ trợ sử dụng phần mềm'
       ]
     },
     {
@@ -178,7 +180,7 @@ window.VNDS_DATA = (() => {
       name: 'FirewallSafe',
       category: 'Sản phẩm phần mềm',
       description:
-        'Sản phẩm cung cấp tường lửa mạng, giúp ngăn chặn các cuộc tấn công mạng.',
+        'Sản phẩm cung cấp tường lửa mạng hàng đầu, giúp ngăn chặn các cuộc tấn công mạng.',
       icon: '🧱',
       collectedData: [
         'Họ và tên',
@@ -199,7 +201,7 @@ window.VNDS_DATA = (() => {
       name: 'NetSentry',
       category: 'Sản phẩm phần mềm',
       description:
-        'Sản phẩm cung cấp các công cụ an ninh mạng hiệu quả để bảo vệ hệ thống của doanh nghiệp.',
+        'Sản phẩm cung cấp các công cụ an ninh mạng hiệu quả để bảo vệ doanh nghiệp.',
       icon: '📡',
       collectedData: [
         'Họ và tên',
@@ -221,7 +223,7 @@ window.VNDS_DATA = (() => {
       category: 'Giải pháp & Dịch vụ',
       description:
         'Dịch vụ tường lửa mạng giúp ngăn chặn các cuộc tấn công mạng và bảo vệ thông tin quan trọng.',
-      icon: '🧱',
+      icon: '🔥',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -242,7 +244,7 @@ window.VNDS_DATA = (() => {
       category: 'Sản phẩm phần mềm',
       description:
         'Sản phẩm cung cấp bộ công cụ an ninh mạng toàn diện, từ phát hiện xâm nhập đến ngăn chặn mã độc.',
-      icon: '🔐',
+      icon: '🔒',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -262,7 +264,7 @@ window.VNDS_DATA = (() => {
       name: 'DefendPro',
       category: 'Sản phẩm phần mềm',
       description:
-        'Sản phẩm cung cấp các công cụ bảo mật mạng mạnh mẽ, giúp doanh nghiệp hoạt động an toàn trên Internet.',
+        'Sản phẩm cung cấp các công cụ bảo mật mạng mạnh mẽ để giúp doanh nghiệp hoạt động an toàn trên Internet.',
       icon: '⚔️',
       collectedData: [
         'Họ và tên',
@@ -304,7 +306,7 @@ window.VNDS_DATA = (() => {
       name: 'NetWall',
       category: 'Giải pháp & Dịch vụ',
       description:
-        'Giải pháp tường lửa mạng giúp ngăn chặn các cuộc tấn công và bảo vệ thông tin quan trọng.',
+        'Sản phẩm dịch vụ tường lửa mạng giúp ngăn chặn các cuộc tấn công và bảo vệ thông tin quan trọng.',
       icon: '🛡️',
       collectedData: [
         'Họ và tên',
@@ -326,7 +328,7 @@ window.VNDS_DATA = (() => {
       category: 'Sản phẩm phần mềm',
       description:
         'Sản phẩm cung cấp các công cụ an ninh mạng đáng tin cậy để bảo vệ doanh nghiệp khỏi các mối đe dọa mạng.',
-      icon: '🔒',
+      icon: '🔐',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
