@@ -1,3 +1,95 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Website mô phỏng đào tạo bảo vệ dữ liệu cá nhân của VNDS"><title>Gửi yêu cầu thực hiện quyền – VNDS</title><link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css"></head><body><div data-site-header></div>
-<main><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>›</span><a href="data-subject-rights.html">Quyền chủ thể dữ liệu</a><span>›</span><span>Gửi yêu cầu</span></div><h1 id="rightName">Gửi yêu cầu thực hiện quyền</h1><p class="section-subtitle" id="rightDescription"></p></div></section><section class="section"><div class="container"><form class="card" id="rightRequestForm" novalidate><div class="grid grid-2"><div class="form-group"><label for="rrFullName">Họ và tên *</label><input class="form-control" id="rrFullName" name="fullName"><div class="field-error" data-error-for="fullName"></div></div><div class="form-group"><label for="rrEmail">Email *</label><input class="form-control" id="rrEmail" name="email"><div class="field-error" data-error-for="email"></div></div><div class="form-group"><label for="rrPhone">Số điện thoại *</label><input class="form-control" id="rrPhone" name="phone"><div class="field-error" data-error-for="phone"></div></div><div class="form-group"><label for="rrIdentity">CCCD/Giấy tờ định danh</label><input class="form-control" id="rrIdentity" name="identityNumber"></div><div class="form-group"><label for="rrProduct">Sản phẩm/Dịch vụ liên quan</label><input class="form-control" id="rrProduct" name="product"></div><div class="form-group"><label for="rrCode">Mã đăng ký liên quan</label><input class="form-control" id="rrCode" name="registrationCode"></div><div class="form-group"><label for="rrType">Loại quyền</label><input class="form-control" id="rrType" name="rightType" readonly></div><div class="form-group"><label for="rrResponse">Phương thức phản hồi</label><select class="form-control" id="rrResponse" name="responseMethod"><option>Email</option><option>Điện thoại</option></select></div></div><div class="form-group" style="margin-top:14px"><label for="rrContent">Nội dung yêu cầu *</label><textarea class="form-control" id="rrContent" name="requestContent"></textarea><div class="field-error" data-error-for="requestContent"></div></div><div class="form-group" style="margin-top:14px"><label for="rrFile">Tài liệu bổ sung (mô phỏng)</label><input class="form-control" id="rrFile" type="file"></div><div class="consent-box" style="margin-top:18px"><label class="checkbox-row"><input type="checkbox" name="confirmAccuracy"><span>Tôi xác nhận thông tin cung cấp là chính xác.</span></label><label class="checkbox-row"><input type="checkbox" name="confirmProcess"><span>Tôi đồng ý cho xử lý thông tin nhằm xác minh và giải quyết yêu cầu.</span></label></div><div class="form-actions"><a class="btn btn-secondary" href="data-subject-rights.html">Quay lại</a><button class="btn btn-primary" type="submit">Gửi yêu cầu</button></div></form></div></section></main>
-<div data-site-footer></div><script src="js/data.js"></script><script src="js/storage.js"></script><script src="js/utils.js"></script><script src="js/api.js"></script><script src="js/toast.js"></script><script src="js/modal.js"></script><script src="js/layout.js"></script><script src="js/cookie-banner.js"></script><script src="js/settings.js"></script><script src="js/products.js"></script><script src="js/registration.js"></script><script src="js/rights.js"></script><script src="js/right-request.js"></script><script src="js/privacy-policy.js"></script><script src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Website mô phỏng đào tạo bảo vệ dữ liệu cá nhân của VNDS">
+    <title>Gửi yêu cầu thực hiện quyền – VNDS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div data-site-header></div>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>›</span><a
+                        href="data-subject-rights.html">Quyền chủ thể dữ liệu</a><span>›</span><span>Gửi yêu cầu</span>
+                </div>
+                <h1 id="rightName">Gửi yêu cầu thực hiện quyền</h1>
+                <p class="section-subtitle" id="rightDescription"></p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <form class="card" id="rightRequestForm" novalidate>
+                    <div class="grid grid-2">
+                        <div class="form-group"><label for="rrFullName">Họ và tên *</label><input class="form-control"
+                                id="rrFullName" name="fullName">
+                            <div class="field-error" data-error-for="fullName"></div>
+                        </div>
+                        <div class="form-group"><label for="rrEmail">Email *</label><input class="form-control"
+                                id="rrEmail" name="email">
+                            <div class="field-error" data-error-for="email"></div>
+                        </div>
+                        <div class="form-group"><label for="rrPhone">Số điện thoại *</label><input class="form-control"
+                                id="rrPhone" name="phone">
+                            <div class="field-error" data-error-for="phone"></div>
+                        </div>
+                        <div class="form-group"><label for="rrIdentity">CCCD/Giấy tờ định danh</label><input
+                                class="form-control" id="rrIdentity" name="identityNumber"></div>
+                        <div class="form-group"><label for="rrProduct">Sản phẩm/Dịch vụ liên quan</label><input
+                                class="form-control" id="rrProduct" name="product"></div>
+                        <div class="form-group"><label for="rrCode">Mã đăng ký liên quan</label><input
+                                class="form-control" id="rrCode" name="registrationCode"></div>
+                        <div class="form-group"><label for="rrType">Loại quyền</label><input class="form-control"
+                                id="rrType" name="rightType" readonly></div>
+                        <div class="form-group"><label for="rrResponse">Phương thức phản hồi</label><select
+                                class="form-control" id="rrResponse" name="responseMethod">
+                                <option>Email</option>
+                                <option>Điện thoại</option>
+                            </select></div>
+                    </div>
+                    <div class="form-group" style="margin-top:14px"><label for="rrContent">Nội dung yêu cầu
+                            *</label><textarea class="form-control" id="rrContent" name="requestContent"></textarea>
+                        <div class="field-error" data-error-for="requestContent"></div>
+                    </div>
+                    <div class="form-group" style="margin-top:14px"><label for="rrFile">Tài liệu bổ sung (mô
+                            phỏng)</label><input class="form-control" id="rrFile" type="file"></div>
+                    <div class="consent-box" style="margin-top:18px"><label class="checkbox-row"><input type="checkbox"
+                                name="confirmAccuracy"><span>Tôi xác nhận thông tin cung cấp là chính
+                                xác.</span></label><label class="checkbox-row"><input type="checkbox"
+                                name="confirmProcess"><span>Tôi đồng ý cho xử lý thông tin nhằm xác minh và giải quyết
+                                yêu cầu.</span></label></div>
+                    <div class="form-actions"><a class="btn btn-secondary" href="data-subject-rights.html">Quay
+                            lại</a><button class="btn btn-primary" type="submit">Gửi yêu cầu</button></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/cookie-banner.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/rights.js"></script>
+    <script src="js/right-request.js"></script>
+    <script src="js/privacy-policy.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
