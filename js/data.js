@@ -11,9 +11,8 @@ window.VNDS_DATA = (() => {
       acronym: 'VCHK',
       name: 'Vận chuyển hành khách',
       category: 'Dịch vụ',
-      description:
-        'Dịch vụ vận chuyển hành khách bằng đường hàng không.',
-      icon: 'plane',
+      description: 'Dịch vụ vận chuyển hành khách bằng đường hàng không.',
+      icon: '✈️',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -32,9 +31,8 @@ window.VNDS_DATA = (() => {
       acronym: 'HH',
       name: 'Vận chuyển hàng hóa',
       category: 'Dịch vụ',
-      description:
-        'Dịch vụ vận tải hàng không cho doanh nghiệp và logistics.',
-      icon: 'package',
+      description: 'Dịch vụ vận tải hàng không cho doanh nghiệp và logistics.',
+      icon: '📦',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -55,7 +53,7 @@ window.VNDS_DATA = (() => {
       category: 'Sản phẩm phần mềm',
       description:
         'Mua thêm hành lý ký gửi, hành lý ưu tiên và dịch vụ vận chuyển dụng cụ thể thao.',
-      icon: 'briefcase',
+      icon: '🧳',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -76,7 +74,7 @@ window.VNDS_DATA = (() => {
       category: 'Sản phẩm phần mềm',
       description:
         'Combo đồ ăn, nước uống và suất ăn nóng cao cấp cho khách hàng SkyBoss hoặc Business.',
-      icon: 'utensils',
+      icon: '🍱',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -97,7 +95,7 @@ window.VNDS_DATA = (() => {
       category: 'Sản phẩm phần mềm',
       description:
         'Dịch vụ bảo hiểm bổ sung được cung cấp khi khách hàng đặt vé trực tuyến.',
-      icon: 'shield-check',
+      icon: '🛡️',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -118,7 +116,7 @@ window.VNDS_DATA = (() => {
       category: 'Giải pháp & Dịch vụ',
       description:
         'Các dịch vụ ưu tiên gồm làm thủ tục nhanh, ưu tiên hành lý và ưu tiên lên máy bay.',
-      icon: 'star',
+      icon: '⭐',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -138,8 +136,8 @@ window.VNDS_DATA = (() => {
       name: 'GuardCyberSentry',
       category: 'Sản phẩm phần mềm',
       description:
-        'Sản phẩm cung cấp các công cụ bảo mật mạng mạnh mẽ để bảo vệ hệ thống doanh nghiệp.',
-      icon: 'shield',
+        'Sản phẩm cung cấp các công cụ bảo mật mạng mạnh mẽ để bảo vệ hệ thống của doanh nghiệp.',
+      icon: '🛡️',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -159,8 +157,8 @@ window.VNDS_DATA = (() => {
       name: 'DefendNet',
       category: 'Sản phẩm phần mềm',
       description:
-        'Sản phẩm cung cấp giải pháp bảo mật mạng cho doanh nghiệp và người dùng cá nhân.',
-      icon: 'network',
+        'Sản phẩm cung cấp giải pháp bảo mật mạng đáng tin cậy cho doanh nghiệp và người dùng cá nhân.',
+      icon: '🌐',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -181,7 +179,7 @@ window.VNDS_DATA = (() => {
       category: 'Sản phẩm phần mềm',
       description:
         'Sản phẩm cung cấp tường lửa mạng, giúp ngăn chặn các cuộc tấn công mạng.',
-      icon: 'brick-wall',
+      icon: '🧱',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -201,8 +199,155 @@ window.VNDS_DATA = (() => {
       name: 'NetSentry',
       category: 'Sản phẩm phần mềm',
       description:
-        'Sản phẩm cung cấp các công cụ an ninh mạng để bảo vệ hệ thống của doanh nghiệp.',
-      icon: 'radar',
+        'Sản phẩm cung cấp các công cụ an ninh mạng hiệu quả để bảo vệ hệ thống của doanh nghiệp.',
+      icon: '📡',
+      collectedData: [
+        'Họ và tên',
+        'Số điện thoại',
+        'Email',
+        'Số CCCD hoặc giấy tờ định danh'
+      ],
+      purposes: [
+        'Tiếp nhận đăng ký sản phẩm',
+        'Xác minh thông tin khách hàng',
+        'Cung cấp và hỗ trợ sản phẩm'
+      ]
+    },
+    {
+      id: 'defend-cyber-wall',
+      serviceId: '75998306713942110',
+      acronym: 'DC',
+      name: 'DefendCyberWall',
+      category: 'Giải pháp & Dịch vụ',
+      description:
+        'Dịch vụ tường lửa mạng giúp ngăn chặn các cuộc tấn công mạng và bảo vệ thông tin quan trọng.',
+      icon: '🧱',
+      collectedData: [
+        'Họ và tên',
+        'Số điện thoại',
+        'Email',
+        'Số CCCD hoặc giấy tờ định danh'
+      ],
+      purposes: [
+        'Tiếp nhận đăng ký giải pháp',
+        'Xác minh thông tin khách hàng',
+        'Cung cấp và hỗ trợ giải pháp'
+      ]
+    },
+    {
+      id: 'secure-shield-pro',
+      serviceId: '75998306713942111',
+      acronym: 'SSP',
+      name: 'SecureShieldPro',
+      category: 'Sản phẩm phần mềm',
+      description:
+        'Sản phẩm cung cấp bộ công cụ an ninh mạng toàn diện, từ phát hiện xâm nhập đến ngăn chặn mã độc.',
+      icon: '🔐',
+      collectedData: [
+        'Họ và tên',
+        'Số điện thoại',
+        'Email',
+        'Số CCCD hoặc giấy tờ định danh'
+      ],
+      purposes: [
+        'Tiếp nhận đăng ký sản phẩm',
+        'Xác minh thông tin khách hàng',
+        'Cung cấp và hỗ trợ sản phẩm'
+      ]
+    },
+    {
+      id: 'defend-pro',
+      serviceId: '75998306713942112',
+      acronym: 'DP',
+      name: 'DefendPro',
+      category: 'Sản phẩm phần mềm',
+      description:
+        'Sản phẩm cung cấp các công cụ bảo mật mạng mạnh mẽ, giúp doanh nghiệp hoạt động an toàn trên Internet.',
+      icon: '⚔️',
+      collectedData: [
+        'Họ và tên',
+        'Số điện thoại',
+        'Email',
+        'Số CCCD hoặc giấy tờ định danh'
+      ],
+      purposes: [
+        'Tiếp nhận đăng ký sản phẩm',
+        'Xác minh thông tin khách hàng',
+        'Cung cấp và hỗ trợ sản phẩm'
+      ]
+    },
+    {
+      id: 'guard-data',
+      serviceId: '75998306713942113',
+      acronym: 'GD',
+      name: 'GuardData',
+      category: 'Sản phẩm phần mềm',
+      description:
+        'Sản phẩm cung cấp giải pháp bảo mật mạng tiên tiến để bảo vệ hệ thống và dữ liệu khỏi các mối đe dọa.',
+      icon: '🗄️',
+      collectedData: [
+        'Họ và tên',
+        'Số điện thoại',
+        'Email',
+        'Số CCCD hoặc giấy tờ định danh'
+      ],
+      purposes: [
+        'Tiếp nhận đăng ký sản phẩm',
+        'Xác minh thông tin khách hàng',
+        'Cung cấp và hỗ trợ sản phẩm'
+      ]
+    },
+    {
+      id: 'net-wall',
+      serviceId: '75998306713942114',
+      acronym: 'NW',
+      name: 'NetWall',
+      category: 'Giải pháp & Dịch vụ',
+      description:
+        'Giải pháp tường lửa mạng giúp ngăn chặn các cuộc tấn công và bảo vệ thông tin quan trọng.',
+      icon: '🛡️',
+      collectedData: [
+        'Họ và tên',
+        'Số điện thoại',
+        'Email',
+        'Số CCCD hoặc giấy tờ định danh'
+      ],
+      purposes: [
+        'Tiếp nhận đăng ký giải pháp',
+        'Xác minh thông tin khách hàng',
+        'Cung cấp và hỗ trợ giải pháp'
+      ]
+    },
+    {
+      id: 'safe-cyber',
+      serviceId: '75998306713942115',
+      acronym: 'SGuard',
+      name: 'SafeCyber',
+      category: 'Sản phẩm phần mềm',
+      description:
+        'Sản phẩm cung cấp các công cụ an ninh mạng đáng tin cậy để bảo vệ doanh nghiệp khỏi các mối đe dọa mạng.',
+      icon: '🔒',
+      collectedData: [
+        'Họ và tên',
+        'Số điện thoại',
+        'Email',
+        'Số CCCD hoặc giấy tờ định danh'
+      ],
+      purposes: [
+        'Tiếp nhận đăng ký sản phẩm',
+        'Xác minh thông tin khách hàng',
+        'Cung cấp và hỗ trợ sản phẩm'
+      ]
+    },
+    {
+      id: 'safety-shield',
+      serviceId: '75998306713942116',
+      acronym: 'SS',
+      name: 'SafetyShield',
+      category: 'Sản phẩm phần mềm',
+      description:
+        'Sản phẩm cung cấp giải pháp bảo mật mạng đơn giản nhưng mạnh mẽ, giúp bảo vệ doanh nghiệp khỏi các mối đe dọa mạng.',
+      icon: '✅',
       collectedData: [
         'Họ và tên',
         'Số điện thoại',
@@ -218,7 +363,7 @@ window.VNDS_DATA = (() => {
   ];
   const RIGHTS = [
     ['withdraw-consent', 'Quyền rút lại sự đồng ý', 'Rút lại sự đồng ý đã cung cấp trước đó.', 'Dừng nhận email giới thiệu sản phẩm.'],
-    ['self-protection', 'Quyền khác củ chủ thể dữ liệu', 'Yêu cầu các biện pháp bảo vệ dữ liệu cá nhân.', 'Yêu cầu củ chủ thể dữ liệu trong quá trình xử lý dữ liệu cá nhân.'],
+    ['self-protection', 'Quyền khác củ chủ thể dữ liệu', 'Yêu cầu biện pháp bảo vệ dữ liệu cá nhân của mình.', 'Yêu cầu củ chủ thể dữ liệu trong quá trình xử lý dữ liệu cá nhân.'],
   ].map(([id, name, description, example], i) => ({ id, name, description, example, icon: ['ℹ️', '✅', '🔎', '↩️', '🗑️', '⏸️', '📦', '🛑', '⚖️', '💰', '🛡️'][i], defaultUrl: `right-request.html?right=${id}` }));
   const PROVINCES = ['Hà Nội', 'TP. Hồ Chí Minh', 'Đà Nẵng', 'Hải Phòng', 'Cần Thơ', 'Hà Nam', 'Bắc Ninh', 'Quảng Ninh', 'Thanh Hóa', 'Khác'];
   const TERMS_SECTIONS = [
