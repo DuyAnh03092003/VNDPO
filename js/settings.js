@@ -29,34 +29,86 @@ window.VNDS_SETTINGS=(()=>{
     wrap.querySelector('#applyCookie').onclick=()=>saveCookie(true,wrap);
     wrap.querySelector('#clearCookie').onclick=async()=>{
       if(await VNDS_MODAL.confirm({title:'Xóa cấu hình Cookie Banner',message:'Bạn có chắc muốn xóa cấu hình Cookie Banner?',confirmText:'Xóa',danger:true})){
+        VNDS_COOKIE.removeLoadedScripts();
         VNDS_STORAGE.setStorageItem(VNDS_STORAGE.KEYS.cookie,VNDS_STORAGE.defaults.cookie);
-        VNDS_TOAST.show('Đã xóa cấu hình Cookie Banner.','success');
+        wrap.querySelector('#cookieEnabled').checked=false;
+        wrap.querySelector('#cookieScript').value='';
+        wrap.querySelector('.script-status').textContent='Trạng thái: Chưa cấu hình';
+        VNDS_TOAST.show('Đã xóa cấu hình và script Cookie Banner cũ.','success');
       }
     };
     return wrap;
   }
 
   function saveCookie(apply,wrap){
+    const previousCfg=VNDS_STORAGE.getStorageItem(
+      VNDS_STORAGE.KEYS.cookie,
+      VNDS_STORAGE.defaults.cookie
+    );
     const enabled=wrap.querySelector('#cookieEnabled').checked;
     const scriptCode=wrap.querySelector('#cookieScript').value.trim();
     const err=wrap.querySelector('#scriptError');
+    const status=wrap.querySelector('.script-status');
+
     err.textContent='';
+
     if(scriptCode&&!VNDS_COOKIE.parseScripts(scriptCode).length){
       err.textContent='Không tìm thấy thẻ script hợp lệ.';
       VNDS_TOAST.show('Script không hợp lệ.','error');
       return;
     }
-    const cfg={enabled,scriptCode,updatedAt:new Date().toISOString(),lastLoadedAt:''};
-    VNDS_STORAGE.setStorageItem(VNDS_STORAGE.KEYS.cookie,cfg);
-    if(apply&&enabled&&scriptCode){
+
+    const scriptChanged=(previousCfg.scriptCode||'')!==scriptCode;
+    const cfg={
+      enabled,
+      scriptCode,
+      updatedAt:new Date().toISOString(),
+      lastLoadedAt:''
+    };
+
+    const saved=VNDS_STORAGE.setStorageItem(VNDS_STORAGE.KEYS.cookie,cfg);
+    if(saved===false){
+      VNDS_TOAST.show('Không thể lưu cấu hình Cookie Banner.','error');
+      return;
+    }
+
+    /*
+     * Khi script mới khác script đang lưu:
+     * - Nếu chỉ bấm “Lưu cấu hình”: xóa script cũ, chưa chạy script mới.
+     * - Nếu bấm “Lưu và áp dụng”: xóa script cũ rồi chạy script mới.
+     */
+    if(!enabled||!scriptCode){
+      VNDS_COOKIE.removeLoadedScripts();
+      status.textContent=scriptCode
+        ?'Trạng thái: Đã cấu hình nhưng đang tắt'
+        :'Trạng thái: Chưa cấu hình';
+    }else if(apply){
       try{
-        const count=VNDS_COOKIE.loadScriptCode(scriptCode);
-        VNDS_TOAST.show(count?'Đã tải script Cookie Banner.':'Script đã tồn tại, không tải lại.','success');
+        const count=VNDS_COOKIE.replaceScriptCode(scriptCode);
+        cfg.lastLoadedAt=new Date().toISOString();
+        VNDS_STORAGE.setStorageItem(VNDS_STORAGE.KEYS.cookie,cfg);
+        status.textContent='Trạng thái: Đã cấu hình và đang bật';
+        VNDS_TOAST.show(
+          count
+            ?'Đã xóa script cũ và tải Cookie Banner mới.'
+            :'Không có script mới được tải.',
+          count?'success':'warning'
+        );
       }catch(e){
         VNDS_TOAST.show(e.message,'error');
         return;
       }
+    }else if(scriptChanged){
+      VNDS_COOKIE.removeLoadedScripts();
+      status.textContent='Trạng thái: Đã lưu script mới, chưa áp dụng';
+      VNDS_TOAST.show(
+        'Đã xóa script Cookie Banner cũ. Bấm “Lưu và áp dụng” để chạy script mới.',
+        'info'
+      );
+    }else{
+      status.textContent='Trạng thái: Đã cấu hình và đang bật';
     }
+
     VNDS_TOAST.show('Đã lưu cấu hình Cookie Banner.','success');
   }
 
