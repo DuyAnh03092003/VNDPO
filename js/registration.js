@@ -70,6 +70,7 @@ window.VNDS_REGISTRATION=(()=>{
       const title=document.createElement('h3');
       title.textContent=heading;
       const content=document.createElement('p');
+      content.style.whiteSpace = 'pre-line';
       content.textContent=paragraph;
       article.append(title,content);
       wrap.append(article);
