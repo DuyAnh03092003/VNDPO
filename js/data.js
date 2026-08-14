@@ -25,6 +25,27 @@ window.VNDS_DATA = (() => {
         'Xác minh thông tin khách hàng',
         'Cung cấp và hỗ trợ dịch vụ'
       ]
+    },
+    {
+      id: 'data-security-software',
+      serviceId: '75998375272500029',
+      acronym: 'SGO',
+      name: 'Phần mềm an ninh dữ liệu',
+      category: 'Phần mềm',
+      description:
+        'Phần mềm an ninh dữ liệu cung cấp các công cụ và giải pháp để bảo vệ thông tin cá nhân và dữ liệu nhạy cảm của người dùng.',
+      icon: '🏢',
+      collectedData: [
+        'Họ và tên',
+        'Số điện thoại',
+        'Email',
+        'Số CCCD hoặc giấy tờ định danh'
+      ],
+      purposes: [
+        'Marketing và quảng cáo sản phẩm',
+        'Xác minh thông tin khách hàng',
+        'Cung cấp và hỗ trợ dịch vụ'
+      ]
     }
   ];
   const RIGHTS = [
