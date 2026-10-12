@@ -28,7 +28,7 @@ window.VNDS_DATA = (() => {
     },
     {
       id: 'data-security-software',
-      serviceId: '75998375272500029',
+      serviceId: '75998306713942110',
       acronym: 'SGO',
       name: 'Phần mềm an ninh dữ liệu',
       category: 'Phần mềm',
