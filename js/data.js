@@ -7,7 +7,7 @@ window.VNDS_DATA = (() => {
   const PRODUCTS = [
     {
       id: 'eoffice-service',
-      serviceId: '75998369709814782',
+      serviceId: '75998382078490744',
       acronym: 'SGO',
       name: 'Dịch vụ eOffice',
       category: 'Dịch vụ',
@@ -21,9 +21,8 @@ window.VNDS_DATA = (() => {
         'Số CCCD hoặc giấy tờ định danh'
       ],
       purposes: [
-        'Tiếp nhận đăng ký dịch vụ',
-        'Xác minh thông tin khách hàng',
-        'Cung cấp và hỗ trợ dịch vụ'
+        'Marketing',
+        'Chăm sóc khách hàng',
       ]
     },
     {
